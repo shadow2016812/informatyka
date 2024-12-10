@@ -114,19 +114,19 @@ def random_oponent():
     global liczba_ile_zlapales_megadown
     if liczba_ile_zlapales > 0 and liczba_ile_zlapales % 50 == 0: 
         if randint(1, 2) == 1:
-            return ["Twoja mama z pasem!", int(750 * 1.5), int(100 * 1.5)]  
+            return ["Twoja mama z pasem!", int(750 * 1.5), int(100 * 2)]  
         else:
             return ["twoja mama", 750, 100]  
 
     elif liczba_ile_zlapales > 0 and liczba_ile_zlapales % 30 == 0:  
         if randint(1, 2) == 1:
-            return ["Twoj tata z mlekiem!", int(500 * 1.5), int(75 * 1.5)]  
+            return ["Twoj tata z mlekiem!", int(500 * 1.5), int(75 * 2)]  
         else:
             return ["twoj tata", 500, 75]  
 
     elif liczba_ile_zlapales > 0 and liczba_ile_zlapales % 10 == 0:  
         if randint(1, 2) == 1:
-            return ["TWOJ DZIADEK Z PISTOLETEM!", int(300 * 1.5), int(50 * 1.5)]  
+            return ["TWOJ DZIADEK Z PISTOLETEM!", int(300 * 1.5), int(50 * 2)]  
         else:
             return ["TWOJ DZIADEK", 300, 50]  
 
@@ -162,7 +162,7 @@ def random_oponent():
 
 #--------------------------
 
-def cos_zebniezdech():
+def cos_zebniestracilchrom():
     global hp, moc
     if liczba_ile_zlapales % luck == 0 and liczba_ile_zlapales > 0:
         if randint(1, 2) == 1:
@@ -174,7 +174,7 @@ def cos_zebniezdech():
 
 fala = 11
 
-def pozabiciub():
+def pozadownami():
     global hp, moc
     if liczba_ile_zlapales % fala == 0 and liczba_ile_zlapales > 0:
         if randint(1, 2) == 1:
@@ -213,12 +213,12 @@ while hp > 0:
         liczba_ile_zlapales += 1
 
     if liczba_ile_zlapales % luck == 0 and liczba_ile_zlapales > 0:
-        print("Znalazłeś napój bogów!")
-        cos_zebniezdech()
+        print("znalazles mocz!")
+        cos_zebniestracilchrom()
     
     if liczba_ile_zlapales % fala == 0 and liczba_ile_zlapales > 0:
         print("fu....")
-        pozabiciub()
+        pozadownami()
 
 print("-" * 40)
 print("straciles wszystkie chromosomy")
